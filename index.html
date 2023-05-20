@@ -27,7 +27,7 @@
           >
           <ul class="menu list">
             <li class="menu-item">
-              <a href="./index.html" class="menu-link link">Studio</a>
+              <a href="./index.html" class="menu-link link current">Studio</a>
             </li>
             <li class="menu-item">
               <a href="./portfolio.html" class="menu-link link">Portfolio</a>
@@ -60,7 +60,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="main-button">Order Service</button>
+          <button type="button" class="main-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -73,7 +75,8 @@
               <div class="companii-icon">
                 <svg
                   class="companii-img-icon"
-                  width="64" height="64"
+                  width="64"
+                  height="64"
                   aria-label="icon antenna"
                 >
                   <use href="./images/icons.svg#icon-antenna"></use>
@@ -554,5 +557,16 @@
         </div>
       </div>
     </footer>
+    <!-- backdrop -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
